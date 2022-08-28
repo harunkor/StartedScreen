@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.patika.week2.User" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GetStartedActivity">
+
+
+        <ImageView
+            android:id="@+id/getstarted_logo"
+            app:layout_constraintDimensionRatio=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/getstartedlogo"
+            android:contentDescription="@string/app_name"
+            style="@style/getstartedlogo" />
+
+        <TextView
+            android:id="@+id/getstarted_text"
+            android:text="@string/hand_pickle_high_n_quality_snacks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getstarted_logo"
+            style="@style/getstartedtext" />
+
+        <Button
+            android:id="@+id/getstarted_button"
+            android:text="@string/get_started"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getstarted_text"
+            style="@style/getstartedbutton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
